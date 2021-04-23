@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 // import ClassCounter from './components/ClassCounter';
 // import HookCounter from './components/HookCounter';
 // import HookCounterTwo from './components/useState/HookCounterTwo';
@@ -7,7 +8,11 @@ import './App.css';
 // import HookCounterFour from './components/useState/HookCounterFour';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
 // import HookCounterOne from './components/useEffect/HookCounterOne';
-import DataFetching from './components/useEffect/fetching/DataFetching';
+// import DataFetching from './components/useEffect/fetching/DataFetching';
+import ComponentC from './components/useContext/ComponentC';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -15,7 +20,12 @@ function App() {
       {/* <HookCounterThree /> */}
       {/* <ClassCounter /> */}
       {/* <ClassCounterOne /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={'Theo'}>
+        <ChannelContext.Provider value={'CodeEvolution'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
