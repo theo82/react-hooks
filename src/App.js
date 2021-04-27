@@ -9,8 +9,8 @@ import React from 'react';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
 // import HookCounterOne from './components/useEffect/HookCounterOne';
 // import DataFetching from './components/useEffect/fetching/DataFetching';
-import ComponentC from './components/useContext/ComponentC';
-
+// import ComponentC from './components/useContext/ComponentC';
+import CounterOne from './components/useReducer/CounterOne';
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -21,11 +21,12 @@ function App() {
       {/* <ClassCounter /> */}
       {/* <ClassCounterOne /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value={'Theo'}>
+      {/* <UserContext.Provider value={'Theo'}>
         <ChannelContext.Provider value={'CodeEvolution'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <CounterOne />
     </div>
   );
 }
