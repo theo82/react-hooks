@@ -10,7 +10,9 @@ import React from 'react';
 // import HookCounterOne from './components/useEffect/HookCounterOne';
 // import DataFetching from './components/useEffect/fetching/DataFetching';
 // import ComponentC from './components/useContext/ComponentC';
-import CounterOne from './components/useReducer/CounterOne';
+// import CounterOne from './components/useReducer/CounterOne';
+import CounterTwo from './components/useReducer/CounterTwo';
+
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -26,7 +28,7 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
