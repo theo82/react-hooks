@@ -11,7 +11,8 @@ import React from 'react';
 // import DataFetching from './components/useEffect/fetching/DataFetching';
 // import ComponentC from './components/useContext/ComponentC';
 // import CounterOne from './components/useReducer/CounterOne';
-import CounterTwo from './components/useReducer/CounterTwo';
+// import CounterTwo from './components/useReducer/CounterTwo';
+import CounterThree from './components/useReducer/CounterThree';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -28,7 +29,8 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      <CounterTwo />
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
